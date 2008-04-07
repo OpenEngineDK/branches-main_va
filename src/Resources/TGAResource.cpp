@@ -40,8 +40,7 @@ TGAResource::~TGAResource() {
 void TGAResource::Load() {
     if (loaded) return;
     ifstream* file = File::Open(filename,ios::binary);
-
-    // read in colormap info and image type, unsigned char 0 ignored
+     // read in colormap info and image type, unsigned char 0 ignored
     unsigned char* type = new unsigned char[3];
     file->read((char*)type, sizeof(unsigned char)*3); 
     // check for supported tga file type

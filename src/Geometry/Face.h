@@ -22,9 +22,8 @@
 namespace OpenEngine {
 namespace Geometry {
 
-    //using OpenEngine::Math::Vector;
 using namespace OpenEngine::Math;
-    using namespace OpenEngine::Resources;
+using namespace OpenEngine::Resources;
 
 class Face;
 //! Smart pointer to a face object.

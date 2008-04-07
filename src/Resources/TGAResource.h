@@ -35,14 +35,15 @@ class TGAResource : public ITextureResource {
 private:
     bool loaded;
     int id;                     //!< material identifier
-    string filename;            //!< file name
+
     unsigned char* data;        //!< binary material data
     int width;                  //!< texture width
     int height;                 //!< texture height
     int depth;                  //!< texture depth/bits
 
 public:
-
+    // TODO: TEMP
+    string filename;            //!< file name
     /**
      * Constructor
      *

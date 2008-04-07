@@ -12,6 +12,7 @@
 #include <Scene/ISceneNodeVisitor.h>
 #include <Scene/SceneNode.h>
 #include <Scene/GeometryNode.h>
+#include <Scene/VertexArrayNode.h>
 #include <Scene/TransformationNode.h>
 #include <Renderers/RenderStateNode.h>
 #include <Renderers/IRenderNode.h>
@@ -71,7 +72,11 @@ namespace Scene {
     void ISceneNodeVisitor::VisitRenderNode(IRenderNode* node) {
         DefaultVisitNode(node);
     }
-
+    //! @see VisitSceneNode
+    void ISceneNodeVisitor::VisitVertexArrayNode(VertexArrayNode* node) {
+        DefaultVisitNode(node);
+    }
+ 
 // generated default visit implementations
 @OE_VISITOR_IMPL_EXPANSION@
 
